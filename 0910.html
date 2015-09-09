@@ -30,8 +30,8 @@
   <li class="line" data-line="30">Due
   <ul>
   <li class="line" data-line="31">Instead of Monday by 11:59pm</li>
-  <li class="line" data-line="32">Please it is ()</li>
-  <li class="line" data-line="33">a <strong>From Now</strong> concept is practically</li>
+  <li class="line" data-line="32"><span id='example'></span> make more sense? (It will be negative if you read it next week but that's the point. [4 line of code])</li>
+  <li class="line" data-line="33">a <strong>From Now</strong> concept is practically essential</li>
   <li class="line" data-line="34">There aren't even exact week,is it even already DUE,this monday?.</li>
   </ul>
   </li>
@@ -57,5 +57,14 @@
   <p class="line" data-line="64">A decent Shortener for my 50 years on my <code>You are never eating expired food again</code> - plan</p>
   <p class="line" data-line="66">Get the ShortCut by writing ShortCuts for keen learners.</p>
   <p class="line" data-line="68">2016 might be the year to learn the <code>Swift</code> the new-ish(ugly) Apple language.</p>
+  <p class="line" data-line="68">Any way I still needed to finish my stuff for now.</p>
+  <script>
+    (function (){
+      var t = (new Date('2015/9/15 11:59:00') - new Date())
+      var hours = Math.floor(t / (3600  * 1000))
+      var days = Math.floor(t / (3600 * 24 * 1000))
+      document.querySelector('#example').innerHTML = '<i style="color: grey;">('+ hours + 'hours) / ('+ days +'days) </i>'
+    }).call()
+  </script>
 </body>
 </html>
